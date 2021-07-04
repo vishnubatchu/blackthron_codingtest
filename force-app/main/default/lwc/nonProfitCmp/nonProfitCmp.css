@@ -1,0 +1,19 @@
+.scrollContainer {
+    max-height: 300px;
+    overflow: auto;
+    position: relative;
+    border: 1px solid black;
+}
+.scrollArea {
+    position: relative;
+}
+th {
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(76, 170, 76); 
+    color: white;
+}
+td {
+    padding: 15px;
+    text-align: left;
+}

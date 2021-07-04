@@ -1,0 +1,32 @@
+<template>
+	<lightning-card>
+		<div class="scrollContainer">
+			<div class="scrollArea">
+				<table>
+					<thead>
+						<th>Org Id</th>
+						<th>Org Name</th>
+						<th>Contact Name</th>
+						<th>Phone</th>
+						<th>Email</th>
+						<th>Add</th>
+					</thead>
+					<tbody>
+						<template for:each={nonProfits} for:item="item" for:index="ind">
+							<tr key={organization_id}>
+								<td> {item.organization_id} </td>
+								<td> {item.organization_name} </td>								
+								<td> {item.contact_name} </td>
+								<td> {item.contact_phone} </td>																
+								<td> {item.contact_email} </td>								
+								<td>
+									<lightning-button variant="success" id={ind} label="+" title="Add to the related list" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+								</td>
+							</tr>
+						</template>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</lightning-card>
+</template>
